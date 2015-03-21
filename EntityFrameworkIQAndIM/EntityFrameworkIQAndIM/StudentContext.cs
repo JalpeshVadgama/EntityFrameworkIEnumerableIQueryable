@@ -7,7 +7,7 @@ namespace EntityFrameworkIQAndIM
         public StudentContext()
             : base("StudentConnectionString")
         {
-            //default constructor for connection strings
+            Database.SetInitializer<StudentContext>(null);
         }
         public DbSet<Student> Students { get; set; }
     }
