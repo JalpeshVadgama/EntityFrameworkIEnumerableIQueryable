@@ -10,6 +10,7 @@ namespace EntityFrameworkIQAndIM
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }

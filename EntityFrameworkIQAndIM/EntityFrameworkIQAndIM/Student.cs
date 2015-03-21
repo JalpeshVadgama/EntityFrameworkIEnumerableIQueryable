@@ -2,7 +2,7 @@
 
 namespace EntityFrameworkIQAndIM
 {
-    public class Stduent
+    public class Student
     {
         [Key]
         public int  StudentId { get; set; }
