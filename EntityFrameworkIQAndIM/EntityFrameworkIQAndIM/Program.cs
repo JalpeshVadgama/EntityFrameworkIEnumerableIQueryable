@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 namespace EntityFrameworkIQAndIM
 {
@@ -14,7 +11,10 @@ namespace EntityFrameworkIQAndIM
             using (StudentContext studentContext = new StudentContext())
             {
                 //IEnumerable way
-                IEnumerable<Student> students = studentContext.Students.ToList();
+                //IEnumerable<Student> students = studentContext.Students.ToList();
+
+                //IQueryable way
+                IQueryable<Student> students = studentContext.Students;
                 students = students.Where(s => s.Percentage > 70);
                 PrintStudent(students);
             }            
